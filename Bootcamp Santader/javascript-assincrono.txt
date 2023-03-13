@@ -1,0 +1,59 @@
+Dado o código abaixo
+const hello = new Promise((res, rej) =&gt; {
+res(&#39;Olá, &#39;);
+});
+async function saudacoes() {
+const name = await hello
+.then(res =&gt; res + &quot;tudo &quot;)
+.then(res =&gt; res + &quot;bem?&quot;)
+.catch(e =&gt; console.log(e.message))
+return name;
+}
+await saudacoes();
+
+Selecione a explicação correta sobre o resultado final
+'Olá,tudo bem?'
+
+O que é uma API?
+possibilita a comunicação entre plataformas 
+O que é JSON?
+um formato de troca de informação 
+
+Assinale a alternativa falsa
+Não é possivel saber se uma promisse foi rejeitada
+O que é uma Promise?
+pendente 	resolvido e rejeitado
+
+
+
+
+
+Dadas as afirmações abaixo
+I. É possível trabalhar com Promises utilizando a
+declaração try...catch
+II. É uma boa prática trabalhar com Promises em
+funções síncronas
+III. É necessário utilizar uma biblioteca específica para
+utilizá-las em código Javascript
+Quais são verdadeiras?
+I e II
+Qual a diferença entre as duas funções abaixo?
+Função 1:
+function printName() {
+const name = nameApi();
+return name;
+}
+
+Função 2:
+async function printName() {
+const name = await nameApi();
+return name;
+}
+A primeira função não assincrona e a segunda é A maneira correta de lidar com promiss é a segunda
+
+Sobre Promises, é correto afirmar que:
+
+É necessário utilizar o operador await para obter o resultado 
+
+Sobre o método 	, é correto afirmar que:
+ele retorna uma Promisse

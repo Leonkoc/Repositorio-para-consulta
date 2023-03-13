@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const preco = 125;
+      const desconto = Number(prompt("digite o valor do desconto: "));
+      const descontoFinal = desconto / 100;
+      const precoFinal = preco * descontoFinal;
+      const precoDesconto = preco - precoFinal;
+      alert(`O valor com desconto é ${precoDesconto}`);
+    </script>
+  </body>
+</html>

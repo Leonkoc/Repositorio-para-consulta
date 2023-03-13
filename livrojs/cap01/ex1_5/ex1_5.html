@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const jantar = Number(prompt("Digite o valor da conta"));
+      const gorjeta = jantar * 0.1;
+      const total = jantar + gorjeta;
+      // alert(
+      //   "A a taxa do graçom é de R$: " +
+      //     gorjeta +
+      //     " e o total é de R$: " +
+      //     total
+      // );
+      alert(
+        `A taxa do garçom é de R$: ${gorjeta.toFixed(
+          2
+        )}.\n E o total é de R$: ${total.toFixed(2)}`
+      );
+    </script>
+  </body>
+</html>

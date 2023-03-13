@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuso</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(9, 116, 143, 0.664);
+      }
+      img {
+        width: 300px;
+      }
+      .btn {
+        display: flex;
+        background-color: rgb(0, 111, 167);
+        color: rgb(255, 255, 255);
+        border: none;
+        width: 200px;
+        height: 80px;
+        border-radius: 5px;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn:hover {
+        background-color: rgba(240, 236, 255, 0.905);
+        color: black;
+      }
+      h1 {
+        color: rgb(0, 111, 167);
+      }
+      p {
+        font-weight: bold;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./img/fuso.png" alt="Fuso horarios" />
+      <h1>Programa fuso horário</h1>
+      <form>
+        <p>
+          Hora no Brasil (h.m)
+          <input
+            type="number"
+            id="inHoraBrasil"
+            min="0"
+            max="23.59"
+            step="0.01"
+            placeholder="12.35"
+            required
+          />
+        </p>
+        <input type="submit" value="Hora na França" class="btn" />
+      </form>
+      <h3></h3>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

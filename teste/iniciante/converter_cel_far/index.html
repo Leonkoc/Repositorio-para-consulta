@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="externo">
+            <h2 class="title-container">Conversão Fahrenheit e Celsius</h2>
+            <select name="option" id="options">
+                <option value="celsius_para_fahrenheit" id="celToFa">Celsius para Fahrenheit</option>
+                <option value="fahrenheit_para_celsius" id="faToCe">Fahrenheit para Celsius</option>
+            </select>
+            <br>
+            <div class="conversao">
+                <h3>Temperatura:</h3>
+                <input type="text" id="entry" placeholder="ex: 212">
+            </div>
+            <input type="submit" value="Converter" id="submit-form">
+        </div>
+        <p id="show-result"></p>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
